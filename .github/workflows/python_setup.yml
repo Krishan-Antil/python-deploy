@@ -17,7 +17,7 @@ jobs:
         run: python --version
 
       - name: Run Flake8 Linting
-        run: flask8 --version
+        run: flake8 --version
 
       - name: Run Pytest
         run: pytest --version
