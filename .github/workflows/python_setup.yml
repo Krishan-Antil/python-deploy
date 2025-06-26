@@ -11,12 +11,12 @@ jobs:
           python-version: '3.9'
       - name: Dependency installation
         run: |
-          apt-get update pip &&
-          pip install pytest &&
+          apt-get update pip
+          pip install pytest
           pip install flake8
       - name: Verification
         run: |
-          python -v &&
-          flake8 --version &&
+          python -v
+          flake8 --version
           pytest --version
     
